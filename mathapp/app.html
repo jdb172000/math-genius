@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Genius</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"/>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="title">⚡ Math Genius</h1>
+    <div class="controls">
+      <select id="language-select">
+        <option value="english">English</option>
+        <option value="afrikaans">Afrikaans</option>
+      </select>
+      <button id="manual-help-btn">Request Manual Help</button>
+    </div>
+    <div id="chat" class="chat-box"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your math problem..." autocomplete="off"/>
+      <button type="submit">Ask</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
