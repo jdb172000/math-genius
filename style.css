@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00fff7;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  color: #00fff7;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+select, button {
+  font-family: 'Orbitron', sans-serif;
+  background: #1e1e2f;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#chat {
+  height: 300px;
+  overflow-y: auto;
+  background: #101018;
+  border: 1px solid #00fff7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user {
+  background-color: #0077ff;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #27293d;
+  color: #00fff7;
+  align-self: flex-start;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #00fff7;
+  background: #0d0d1a;
+  color: white;
+}
